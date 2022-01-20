@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
 :root {
   --primary: coral;
   --background-dark: #020100;
@@ -182,6 +185,140 @@ main {
   margin-left: 30%;
   width: 75%;
 }
+
+/* tags */
+/* hs */
+h1:first-of-type:before {
+  content: '<h1>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: -2rem;
+}
+h1:last-of-type:after {
+  content: '<h1/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  left: -2rem;
+  bottom: -3rem;
+}
+h2:first-of-type:before {
+  content: '<h2>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: -2rem;
+}
+h2:last-of-type:after {
+  content: '<h2/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  left: -2rem;
+  bottom: -3rem;
+}
+h3:first-of-type:before {
+  content: '<h3>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: -2rem;
+}
+h3:last-of-type:after {
+  content: '<h3/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  left: -2rem;
+  bottom: -3rem;
+}
+/* p */
+p:first-of-type:before {
+  content: '<p>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: -2rem;
+}
+p:last-of-type:after {
+  content: '<p/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  left: -2rem;
+  bottom: -3rem;
+}
+/* ul */
+ul:first-of-type:before {
+  content: '<ul>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: -2rem;
+}
+ul:last-of-type:after {
+  content: '<ul/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  left: -2rem;
+  bottom: -3rem;
+}
+ol:first-of-type:before {
+  content: '<ol>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: -2rem;
+}
+ol:last-of-type:after {
+  content: '<ol/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  left: -2rem;
+  bottom: -3rem;
+}
+/* section */
+section:before {
+  content: '<section>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  margin-top: -4rem;
+  left: 2rem;
+}
+section:after {
+  content: '</section>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  margin-bottom: -4rem;
+  left: 2rem;
+}
+
+/* end tags */
 
 /* RESPONSIVE  PHONE*/
 @media screen and (max-width: 576px) {

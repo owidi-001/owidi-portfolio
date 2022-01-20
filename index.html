@@ -10,14 +10,15 @@
   <link rel="stylesheet" href="./css/nav.css" />
   <link rel="stylesheet" href="./css/sections.css" />
   <link rel="stylesheet" href="./css/particles.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <!-- navbar -->
   <nav>
-    <a href="#home">Kevin Owidi</a>
+    <a href="#home">Owidi</a>
     <a href="#" onclick="show_aside()" id="menu"><i class="fa fa-bars"></i></a>
   </nav>
 
@@ -52,6 +53,20 @@
 
   <!-- main page -->
   <main class="main">
+    <section id="intro">
+      <div class="container">
+       <div class="text">
+        <h1 class="welcome">
+          Hi, <br>
+          I'm Owidi, <br>
+          Software Engineer. <br>
+        </h1>
+        <span class="role">
+            Fullstack Software Engineer. <br>
+        </span> <div class="bar"></div>
+       </div>
+      </div>
+    </section>
     <section id="home">
       <div class="header">
         <h2>Who Am I ?</h2>
@@ -114,11 +129,11 @@
           </div>
           <div class="col">
             <i class="icon fab fa-python"></i>
-            <i class="icon text">Kotlin</i>
+
             <i class="icon fab fa-java"></i>
             <i class="icon text">Flutter</i>
             <i class="icon fab fa-react"></i>
-            <i class="icon text">Django</i>
+
             <i class="icon fa fa-flutter"></i>
           </div>
         </div>
@@ -164,17 +179,17 @@
             <tr>
               <td>Sep 2018 - To Date</td>
               <td>Freelance developer,Student.</td>
-              <td><a href="http://egertonuniversity.ac.ke">Egerton</a> University,Nakuru,Kenya</td>
+              <!-- <td><a href="http://egertonuniversity.ac.ke">Egerton</a> University,Nakuru,Kenya</td> -->
             </tr>
             <tr>
               <td>Feb 2019 - June 2019</td>
               <td>Reasearch Assistant</td>
-              <td><a href="https://www.cemastea.ac.ke/index.php/contact-us">CEMASTEA</a> ,Karen,Kenya</td>
+              <!-- <td><a href="https://www.cemastea.ac.ke/index.php/contact-us">CEMASTEA</a> ,Karen,Kenya</td> -->
             </tr>
             <tr>
               <td>Feb 2018 - Aug 2018</td>
               <td>Peer teacher,Peer counsellor</td>
-              <td><a href="http://kisumuboys.ac.ke">Kisumu School</a> ,Kisumu,Kenya</td>
+              <!-- <td><a href="http://kisumuboys.ac.ke">Kisumu School</a> ,Kisumu,Kenya</td> -->
             </tr>
           </tbody>
         </table>
@@ -207,10 +222,11 @@
         <a href="./doc/resume.pdf" class="btn" download>Download</a>
       </div>
       <div class="modulus">
-        <h1>Who are you? <small>Modulus on click download</small></h1> 
+        <h1>Who are you? <small>Modulus on click download</small></h1>
         <div>
           <form action="." method="post">
-            <input type="email" name="email" id="email" placeholder="johniedoe@mydomain.com" required /> <button type="submit">Submit</button>
+            <input type="email" name="email" id="email" placeholder="johniedoe@mydomain.com" required /> <button
+              type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -267,6 +283,8 @@
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/form.js"></script>
+<script src="./js/intro.js"></script>
 <script src="./js/runner.js"></script>
 <script src="./js/particles.js"></script>
+
 </html>

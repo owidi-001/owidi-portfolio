@@ -1,6 +1,42 @@
 /* ===================== */
     /* TOP section */
 /* ===================== */
+#intro{
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#intro .container{
+    display:inline-block;
+  overflow:hidden;
+  position:absolute;
+
+    min-height: 100vh;
+    padding: 9rem 3rem;
+    /* position: relative; */
+}
+#intro .container .text{
+    position: relative;
+    z-index: 1;
+    padding-left: 5rem;
+    font-size: 1.6r em;
+}
+#intro h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: "Open Sans",sans-serif;
+    line-height: 8.7rem;
+    position: relative;
+}
+#intro .bar{
+    width:3px;
+  height:49px;
+  position:absolute;
+  top:-1px;
+}
 #home {
     color: white;
     flex-direction: column;
@@ -85,7 +121,7 @@
 
 #about #runner {
     background: var(--secondary);
-    width: 50vw;
+    min-width: 50vw;
     min-height: 30vh;
     padding: 2em;
     text-align: center;
@@ -94,7 +130,7 @@
 
 #about #intrests {
     background: var(--secondary);
-    width: 50vw;
+    min-width: 50vw;
     min-height: 20vh;
     padding: 2em;
     text-align: center;
@@ -207,7 +243,7 @@ h2 {
 
 #experience .header {
     background: var(--secondary);
-    width: 50vw;
+    min-width: 50vw;
     padding: 2em;
     text-align: center;
     margin-bottom: 1em;
@@ -215,7 +251,7 @@ h2 {
 
 #experience .wrapper {
     background: var(--secondary);
-    width: 50vw;
+    min-width: 50vw;
     min-height: 30vh;
     padding: 2em;
     text-align: center;
