@@ -18,6 +18,7 @@ I care deeply about building interfaces and applications that are **reusable**, 
 ## 📫 How to reach me: 
     - Email: kevinalex846@gmail.com
     - Linkedin: [Kevin Owidi](https://www.linkedin.com/in/kevin-owidi-08b275149)
+    - Websit: [me.com](https://owidi-001.github.io/owidi-portfolio/)
 
 
 <!---
