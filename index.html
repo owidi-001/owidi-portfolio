@@ -2,289 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio</title>
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/nav.css" />
-  <link rel="stylesheet" href="./css/sections.css" />
-  <link rel="stylesheet" href="./css/particles.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owidi Porfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav>
-    <a href="#home">Owidi</a>
-    <a href="#" onclick="show_aside()" id="menu"><i class="fa fa-bars"></i></a>
-  </nav>
-
-  <!-- side nav -->
-  <aside>
-    <div class="top">
-      <img src="./imgs/pic.jpeg" alt="" />
-      <h2>Kevin Owidi</h2>
-      <p>Software Engineer</p>
-      <a href="#" class="btn">resume</a>
-    </div>
-    <div class="body">
-      <ul class="nav">
-        <li><a href="#home">Who Am I</a></li>
-        <li><a href="#about">Proefficiency</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer">
-      <ul>
-        <li><a href="#">&copy; owidi 2021</a></li>
-        <li><a href="#">help</a></li>
-      </ul>
-    </div>
-  </aside>
-
-  <!-- particles -->
+    <!-- particles -->
   <div id="particles-js"></div>
+    <section class="left">
 
-  <!-- main page -->
-  <main class="main">
-    <section id="intro">
-      <div class="container">
-       <div class="text">
-        <h1 class="welcome">
-          Hi, <br>
-          I'm Owidi, <br>
-          Software Engineer. <br>
-        </h1>
-        <span class="role">
-            Fullstack Software Engineer. <br>
-        </span> <div class="bar"></div>
-       </div>
-      </div>
-    </section>
-    <section id="home">
-      <div class="header">
-        <h2>Who Am I ?</h2>
-      </div>
-      <div class="body">
-        <h4>Kevin Owidi</h4>
-        <p>
-          I would describe myself as an active, self-sufficient, confident, hardworking, optimistic, strong willed,
-          dedicated and trustworthy gent ready to sacrifice for positive building of my career for the benefit of all.
-        </p>
-        <p>With experience in building and leading tech communities, I am super confident in my project management
-          skills and team work capabilities.</p>
-        <p>
-          My off-work activities includes: Nature walks,Bike riding,Music and patting dogs.
-        </p>
-
-        <h4>Social Media</h4>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/kevin-owidi-08b275149/"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
-        <a href="#" class="btn">Reach out</a>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="header">
-        <h2>Proefficient at ?</h2>
-      </div>
-      <div class="wrapper" id="runner">
-        <h1 class="runner">
-          I am a<br>
-          <span class="txt-rotate" data-period="500"
-            data-rotate='[ "...","Android Dev...","Web dev...", "Graphics Designer", "Database Modeller", "DevOps Expert","Rest APIs" ]'></span>
-        </h1>
-      </div>
-      <div class="wrapper" id="intrests">
-        <h1>Enabling technologies</h1>
-        <div id="rand">
-          <div class="col">
-            <i class="icon fab fa-android"></i>
-            <i class="icon fab fa-html5"></i>
-            <i class="icon fab fa-css3"></i>
-            <i class="icon fab fa-js"></i>
-            <i class="icon fab fa-bootstrap"></i>
-            <i class="icon fab fa-angular"></i>
-          </div>
-          <div class="col">
-            <i class="icon fab fa-python"></i>
-
-            <i class="icon fab fa-java"></i>
-            <i class="icon text">Flutter</i>
-            <i class="icon fab fa-react"></i>
-
-            <i class="icon fa fa-flutter"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="awards">
-      <div class="header">
-        <h2>My Achievements</h2>
-      </div>
-      <div class="wrapper" id="achievements">
-        <img src="./imgs/achieves/python-5.svg" alt="" />
-        <img src="./imgs/achieves/django.svg" alt="" />
-        <img src="./imgs/achieves/material-ui.svg" alt="" />
-        <img src="./imgs/achieves/angular-icon-1.svg" alt="" />
-        <img src="./imgs/achieves/bootstrap-5-1.svg" alt="" />
-        <img src="./imgs/achieves/html.svg" alt="Sololearn html5" />
-      </div>
-      <div class="footer">
-        <h1>So what are those?</h1>
-        <div>
-          <p>Above are certifications and badges earned either from completing a course on the related language or
-            participating in competitions hosted by the above.</p>
-          <br>
-          <p>To verify their credibility, simply click on the icons. </p>
-
-        </div>
-      </div>
-    </section>
-    <section id="experience">
-      <div class="header">
-        <h2>My work experience</h2>
-      </div>
-      <div class="wrapper">
-        <table>
-          <thead>
-            <tr>
-              <td>Date</td>
-              <td>Title</td>
-              <td>Institution</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Sep 2018 - To Date</td>
-              <td>Freelance developer,Student.</td>
-              <!-- <td><a href="http://egertonuniversity.ac.ke">Egerton</a> University,Nakuru,Kenya</td> -->
-            </tr>
-            <tr>
-              <td>Feb 2019 - June 2019</td>
-              <td>Reasearch Assistant</td>
-              <!-- <td><a href="https://www.cemastea.ac.ke/index.php/contact-us">CEMASTEA</a> ,Karen,Kenya</td> -->
-            </tr>
-            <tr>
-              <td>Feb 2018 - Aug 2018</td>
-              <td>Peer teacher,Peer counsellor</td>
-              <!-- <td><a href="http://kisumuboys.ac.ke">Kisumu School</a> ,Kisumu,Kenya</td> -->
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="footer">
-        <h1>Are those all?</h1>
-        <div>
-          <p>In addition to realtime involvement in physical handson experience, I have undergone trainings on both hard
-            skills and soft skills as listed:</p>
-          <br>
-          <ul>
-            <li><a href="http://www.NOBELEXPLORERS.COM">Leadership</a></li>
-            <li><a href="http://www.NOBELEXPLORERS.COM">Project management</a></li>
-            <li><a href="http://www.NOBELEXPLORERS.COM">Communication</a></li>
-            <li><a href="http://www.NOBELEXPLORERS.COM">Team building</a></li>
-            <li><a href="http://www.NOBELEXPLORERS.COM">Team work etc</a></li>
-          </ul>
-
-        </div>
-      </div>
-    </section>
-    <section id="resume">
-      <div class="header">
-        <h2>Download my resume</h2>
-      </div>
-      <div class="wrapper">
-        <a href="./doc/resume.pdf" download>
-          <img src="./doc/doc.jpg" alt="My resume" />
-        </a>
-        <a href="./doc/resume.pdf" class="btn" download>Download</a>
-      </div>
-      <div class="modulus">
-        <h1>Who are you? <small>Modulus on click download</small></h1>
-        <div>
-          <form action="." method="post">
-            <input type="email" name="email" id="email" placeholder="johniedoe@mydomain.com" required /> <button
-              type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="header">
-        <h2>Contact me</h2>
-      </div>
-      <div class="wrapper">
-        <div class="col1">
-          <div class="top">
-            <h4>Contact details</h4>
-            <ul>
-              <li>Email: <a href="#">kevinalex846@gmail.com</a></li>
-              <li>Phone: <a href="#">+254791381653</a></li>
-              <li>Address: <a href="#">Nakuru,Kenya</a></li>
+        <!-- Nav bar -->
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="brand"><b>Owidi</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Education</a>
+                </li>
             </ul>
-          </div>
-          <div class="bottom">
-            <h4>Social Media</h4>
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/kevin-owidi-08b275149/"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-github"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-            </ul>
-          </div>
+        </nav>
+
+        <div class="container">
+            <!-- Description section -->
+            <div class="block">
+                <div>
+                    <img src="/imgs/input.jpeg" alt="">
+                </div>
+                <div>
+                    <p>View, test, leave reviews or raise issues on the projects.</p>
+                </div>
+                <div>
+                    <p>Undergraduate Bsc. Computer Science Student.</p>
+                </div>
+            </div>
+
+            <!-- Current positons -->
+            <div class="info">
+                <h4>Current role</h4>
+                <p>From 2018 - TO DATE</p>
+                <p>Student, Freelance Dev</p>
+            </div>
+
+            <!-- About -->
+            <div class="about">
+                <h2>
+                    WHO & what
+                </h2>
+                <p>
+                    I am a software engineer with 2+ years in freelancing, developing web and android applications.
+
+                </p>
+                <p>
+                    I have a strong background in python and django framework. I am also proefficient in dart and have
+                    experience working with flutter.
+                </p>
+                <p>
+                    I am a quick learner and have a strong attention to detail. I am a team player and have excellent
+                    communication skills. I am looking for a challenging position where I can use my skills to develop
+                    an innovative solution.
+                </p>
+            </div>
         </div>
-        <div class="col2">
-          <form action="http://127.0.0.1:5000" method="post" id="contact_form">
-            <input type="text" name="name" id="fullname" placeholder="Kevin Owidi" required />
-            <input type="email" name="email" id="email" placeholder="johniedoe@mydomain.com" required />
-            <input type="text" name="subject" id="subject" placeholder="Subject.. eg contract job, Feedback et cetera"
-              required />
-            <textarea name="message" id="message" placeholder="Send me a message..."></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
     </section>
-  </main>
+    <section class="right">
+        <div class="start-block">
+        </div>
+        <div class="end-block">
+            <div class="top">
+                <a href="#"><i class="bi bi-search"></i></a>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li><a href="https://wa.me/0791381653">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/kevin-owidi-08b275149/">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://github.com/owidi-001">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="floating">
+            <a href="./doc/resume.pdf"> <i class="bi bi-cloud-download"></i> Resume</a>
+        </div>
+    </section>
 </body>
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="./js/script.js"></script>
-<script src="./js/form.js"></script>
-<script src="./js/intro.js"></script>
-<script src="./js/runner.js"></script>
-<script src="./js/particles.js"></script>
-
+<script src="/js/particles.js"></script>
 </html>
