@@ -8,7 +8,7 @@
     --light: #FFFFFF;
     --font-family: 'Courier New', Courier, monospace;
     --font-family-res: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+
 }
 
 /* global */
@@ -48,7 +48,13 @@ a.btn {
     border: none;
 }
 
-
+.modal {
+    background: var(--primary) !important;
+    color: var(--secondary) !important;
+}
+.modal-title{
+    color: var(--primary) !important;
+}
 /* cards */
 
 .card {
@@ -234,30 +240,35 @@ input[type=submit] {
 
 /* responsive */
 @media only screen and (max-width: 600px) {
-    *{
+    * {
         font-family: var(--font-family-res);
     }
-    nav{
+
+    nav {
         display: block;
         text-align: center;
     }
-    nav a.navbar-brand{
+
+    nav a.navbar-brand {
         text-align: center;
         width: 100%;
         font-weight: bold;
     }
-    nav .d-flex{
+
+    nav .d-flex {
         align-items: center;
         justify-content: center;
         width: 100%;
-    }   
+    }
+
     #hero .title {
         font-size: 2em;
         font-weight: 400;
         text-align: center;
         padding: 1em 0em;
     }
-    #hero ul.nav{
+
+    #hero ul.nav {
         position: relative !important;
         display: flex !important;
         align-items: center;
@@ -267,8 +278,8 @@ input[type=submit] {
     }
 
     /* works */
-    .card{
+    .card {
         margin: .2em 0em;
     }
-    
+
 }

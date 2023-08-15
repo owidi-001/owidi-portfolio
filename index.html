@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owidi</title>
     <link rel="stylesheet" href="./css/styles.css">
+    link
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -26,9 +27,9 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link">about</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#portfolio" class="nav-link">work</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">contact</a>
                     </li>
@@ -71,10 +72,12 @@
             <!-- socials -->
             <ul class="nav justify-content-start position-absolute bottom-0 start-50 translate-middle-x">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://twitter.com/kevinowidi_"><i class="bi bi-twitter"></i> Twitter</a>
+                    <a class="nav-link active" aria-current="page" href="https://twitter.com/kevinowidi_"><i
+                            class="bi bi-twitter"></i> Twitter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/kevin-owidi-08b275149/"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    <a class="nav-link" href="https://www.linkedin.com/in/kevin-owidi-08b275149/"><i
+                            class="bi bi-linkedin"></i> LinkedIn</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/owidi-001"><i class="bi bi-github"></i> Github</a>
@@ -96,77 +99,135 @@
             <div class="row">
                 <div class="col-md-4">
                     <code>
-                        <p>Currently I am an undergraduate BSC. Computer science final year student also working as a freelance developer.</p>
-                        <p>I am based in Njoro sub county, Nakuru county but is not limited to work here.</p>
-                        <p>Outside code, I workout, consume DIY youtube content, argue with friends :() and do 1 or 2 campains on environment conservation.</p>
-                        <p>Besides that, I am and have been a spirited leader and a community builder.</p>
+                        <div>
+                            <p>
+                                Currently, I am working as a Mobile and Integrations Engineer at
+                                <a href="https://deveint.com/en/">Deveint LTD</a>, where I have gained one year of valuable experience.
+                            </p>
+                            <p>
+                                In addition to my role at Deveint, I am deeply involved in various projects. One noteworthy project is
+                                <a href="https://nuruexpress.co.ke/">Nuru Express</a>, where I am proud to be a co-founder. Our mission is to provide
+                                convenient and reliable delivery solutions for SMEs in Kenya.
+                            </p>
+                            <p>
+                                My curiosity extends to the exploration of the Elixir programming language and its potential. If you're interested
+                                in learning more about it, feel free to reach out! 😊
+                            </p>
+                            <p>
+                                Beyond my professional interests, I am an enthusiastic leader and dedicated community builder.
+                            </p>
+                        </div>
                     </code>
                 </div>
                 <div class="col-md-8">
                     <h4 class="title">
-                        Skill ranking
+                        <b>Skill ranking</b>
                     </h4>
-                    <div class="row">
+                    <div class="row d-flex align-items-center justify-content-start">
                         <div class="col-md-3">
-                            <h6>Python,Django</h6>
+                            <h6>Frontend & mobile</h6>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
                                     aria-valuemin="0" aria-valuemax="100">80%</div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3">
-
-                            <h6>Dart,Flutter</h6>
+                        <div class="col-md-1">
+                            <a class="nav-link" data-toggle="modal" data-target="#frontendModal" role="button"
+                                aria-expanded="false" aria-controls="collapseExample"><i
+                                    class="bi bi-arrow-right-circle-fill"></i></a>
                         </div>
-                        <div class="col-md-9">
+
+                    </div>
+                    <div class="row d-flex align-items-center justify-content-start">
+                        <div class="col-md-3">
+                            <h6>Backend & Databases</h6>
+                        </div>
+                        <div class="col-md-8">
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
                                     aria-valuemin="0" aria-valuemax="100">70%</div>
                             </div>
                         </div>
+                        <div class="col-md-1">
+                            <a class="nav-link" data-toggle="modal" data-target="#backendModal" role="button"
+                                aria-expanded="false" aria-controls="collapseExample"><i
+                                    class="bi bi-arrow-right-circle-fill"></i></a>
+                        </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-3">
 
-                            <h6>Java</h6>
+                            <h6>Version Control & Deveops</h6>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-8">
+
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <a class="nav-link" data-toggle="modal" data-target="#versionModal" role="button"
+                                aria-expanded="false" aria-controls="collapseExample"><i
+                                    class="bi bi-arrow-right-circle-fill"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <h6>Testing</h6>
+                        </div>
+                        <div class="col-md-8">
 
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
                                     aria-valuemin="0" aria-valuemax="100">65%</div>
                             </div>
                         </div>
+                        <div class="col-md-1">
+                            <a class="nav-link" data-toggle="modal" data-target="#testingModal" role="button"
+                                aria-expanded="false" aria-controls="collapseExample"><i
+                                    class="bi bi-arrow-right-circle-fill"></i></a>
+                        </div>
                     </div>
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-3">
 
-                            <h6>SQL</h6>
+                            <h6>Server Management</h6>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
                                     aria-valuemin="0" aria-valuemax="100">60%</div>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-md-1">
+                            <a class="nav-link" data-toggle="modal" data-target="#serverModal" role="button"
+                                aria-expanded="false" aria-controls="collapseExample"><i
+                                    class="bi bi-arrow-right-circle-fill"></i></a>
+                        </div>
+                    </div> -->
                     <div class="row">
                         <div class="col-md-3">
 
-                            <h4>HTML,CSS,JS</h4>
+                            <h6>Agile/Scrum</h6>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
                                     aria-valuemin="0" aria-valuemax="100">90%</div>
                             </div>
+                        </div>
+                        <div class="col-md-1">
+                            <a class="nav-link" data-toggle="modal" data-target="#agileModal" role="button"
+                                aria-expanded="false" aria-controls="collapseExample"><i
+                                    class="bi bi-arrow-right-circle-fill"></i></a>
                         </div>
                     </div>
                     <p>
@@ -212,8 +273,8 @@
                         <li>Implement widgets, layouts, and navigation using the Flutter SDK.</li>
                         <li>Develop, debug, and optimize user interface (UI) code.</li>
                         <li>Integrate third-party APIs and SDKs into the app.</li>
-                        <!-- <li>Incorporate data storage solutions such as Firebase or SQLite.</li> -->
-                        <!-- <li>Write unit and widget tests to ensure quality product.</li> -->
+                        <li>Incorporate data storage solutions such as Firebase or SQLite.</li>
+                        <li>Write unit and widget tests to ensure quality product.</li>
                         <li>Troubleshoot and debug issues in the code.</li>
                         <!-- <li>Develop custom plugins to extend the app’s functionality.</li> -->
                         <li>Create custom themes and designs for the app.</li>
@@ -232,7 +293,7 @@
         </div>
     </section>
     <!-- portfolio -->
-    <section id="portfolio">
+    <!-- <section id="portfolio">
         <div class="container">
             <h2 class="title text-center">
                 Recent Works
@@ -259,7 +320,8 @@
                             </p>
                             <div class="bottom-details d-flex justify-content-end p-2">
                                 <div class="links">
-                                    <a href="https://github.com/owidi-001/green_veges" class="btn btn-small btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="https://github.com/owidi-001/green_veges"
+                                        class="btn btn-small btn-primary"><i class="bi bi-eye-fill"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -284,7 +346,8 @@
                             </p>
                             <div class="bottom-details d-flex justify-content-end p-2">
                                 <div class="links">
-                                    <a href="https://github.com/owidi-001/meal-io-rider" class="btn btn-small btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="https://github.com/owidi-001/meal-io-rider"
+                                        class="btn btn-small btn-primary"><i class="bi bi-eye-fill"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -308,7 +371,9 @@
                             </p>
                             <div class="bottom-details d-flex justify-content-end p-2">
                                 <div class="links">
-                                    <a href="https://github.com/owidi-001/meal-io" class="btn btn-small btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="https://github.com/owidi-001/meal-io" class="btn btn-small btn-primary"><i
+                                            class="bi bi-eye-fill"></i></a>
+
                                 </div>
                             </div>
                         </div>
@@ -316,11 +381,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- contact -->
     <section id="contact">
         <div class="container">
+            <h2 class="title text-center">
+                Contact
+            </h2>
             <div class="form-container">
                 <form method="post" id="contactForm">
                     <legend>
@@ -372,10 +440,334 @@
     <footer>
 
     </footer>
-</body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <!-- Modals -->
+    <!-- flutter -->
+    <div class="modal fade" id="frontendModal" tabindex="-1" role="dialog" aria-labelledby="frontendModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="frontendModalTitle">Expertise in Mobile and Web Development</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        I excel in both mobile and web development, specializing in both Flutter for mobile and React
+                        for web.
+                    </p>
+                    <h6>Mobile Expertise - Flutter</h6>
+                    <p>
+                        As a skilled Flutter developer, I have a keen focus on crafting highly performant and visually
+                        appealing
+                        mobile applications. I possess extensive experience in efficient state management, leveraging
+                        tools
+                        like BLoC and Riverpod. This expertise enables me to design complex user interfaces and
+                        seamlessly
+                        manage application state.
+                    </p>
+                    <p>
+                        In terms of API integration, I utilize Dio to establish robust and flexible communication
+                        between the
+                        app and backend services. My mastery of GetIt for dependency injection ensures that my code
+                        remains
+                        organized and maintainable.
+                    </p>
+                    <p>
+                        Rigorous testing is a cornerstone of my development approach. I employ tools like Mockito to
+                        craft
+                        comprehensive unit and widget tests, ensuring the reliability and stability of my Flutter
+                        applications.
+                        My proficiency extends beyond these areas, allowing me to overcome diverse challenges in Flutter
+                        app
+                        development.
+                    </p>
+                    <h6>Web Expertise - React</h6>
+                    <p>
+                        On the web front, I am adept at leveraging the power of React to build dynamic and interactive
+                        user
+                        interfaces. I have a deep understanding of component-based architecture, allowing me to create
+                        reusable and modular web components.
+                    </p>
+                    <p>
+                        I'm well-versed in handling asynchronous operations using React's ecosystem and have experience
+                        integrating APIs and managing state using libraries like Redux or Context API.
+                    </p>
+                    <p>
+                        My commitment to clean code, effective problem-solving, and continuous learning empowers me to
+                        deliver
+                        high-quality solutions for both mobile and web platforms.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Backend -->
+    <div class="modal fade" id="backendModal" tabindex="-1" role="dialog" aria-labelledby="backendModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="backendModalTitle">Expertise in Backend Development and Databases</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        I specialize in backend development and databases, with a strong command of technologies like
+                        Django,
+                        FastAPI, and Flask, ensuring robust and efficient server-side solutions.
+                    </p>
+                    <h6>Backend Expertise</h6>
+                    <p>
+                        My proficiency in backend frameworks such as Django, FastAPI, and Flask empowers me to architect
+                        and
+                        develop intricate web applications with sophisticated functionalities. I craft APIs that
+                        facilitate seamless
+                        communication between frontend and backend components, allowing for dynamic user experiences.
+                    </p>
+                    <p>
+                        Using FastAPI, I leverage asynchronous programming to enhance backend performance and
+                        responsiveness,
+                        providing users with swift and efficient data processing.
+                    </p>
+                    <h6>Database Proficiency</h6>
+                    <p>
+                        In the realm of databases, I am adept at designing and optimizing database schemas for optimal
+                        data storage
+                        and retrieval. I have experience with relational databases like PostgreSQL and MySQL, as well as
+                        NoSQL
+                        databases like MongoDB, tailoring solutions to specific project requirements.
+                    </p>
+                    <p>
+                        My expertise extends to efficient data modeling, indexing, and query optimization, ensuring that
+                        applications
+                        are backed by powerful and scalable data storage solutions.
+                    </p>
+                    <p>
+                        My commitment to clean and maintainable code, coupled with my problem-solving skills, empowers
+                        me to deliver
+                        backend solutions that align with industry best practices and exceed client expectations.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- version control -->
+    <div class="modal fade" id="versionModal" tabindex="-1" role="dialog" aria-labelledby="versionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="versionModalTitle">version in Version Control and DevOps</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        My expertise extends to Version Control and DevOps practices, ensuring streamlined collaboration
+                        and efficient
+                        deployment workflows for software projects.
+                    </p>
+                    <h6>Version Control Mastery</h6>
+                    <p>
+                        I possess a deep understanding of version control systems like Git, enabling me to manage
+                        codebase versions
+                        effectively. I excel at branching, merging, and resolving conflicts, ensuring seamless
+                        collaboration among
+                        development teams.
+                    </p>
+                    <p>
+                        Leveraging version control, I maintain a well-organized and documented history of code changes,
+                        enabling easy
+                        tracking of progress and efficient code reviews.
+                    </p>
+                    <h6>DevOps Excellence</h6>
+                    <p>
+                        In the realm of DevOps, I orchestrate efficient deployment pipelines using tools like Jenkins,
+                        Travis CI, or
+                        GitHub Actions. I implement Continuous Integration (CI) and Continuous Deployment (CD) practices
+                        to ensure
+                        rapid and reliable software delivery.
+                    </p>
+                    <p>
+                        I automate deployment, testing, and monitoring processes, enabling teams to focus on development
+                        rather than
+                        repetitive tasks. My expertise extends to cloud platforms like AWS, Azure, or Google Cloud,
+                        where I configure
+                        infrastructure for optimal scalability and performance.
+                    </p>
+                    <p>
+                        My commitment to version control best practices and DevOps methodologies empowers me to deliver
+                        software
+                        solutions that are well-managed, easily maintainable, and efficiently deployed.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testing -->
+    <div class="modal fade" id="testingModal" tabindex="-1" role="dialog" aria-labelledby="testingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="testingModalTitle">Expertise in Testing for Frontend and Backend</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        My expertise spans both frontend and backend testing, with a focus on delivering reliable and
+                        robust software
+                        solutions through comprehensive testing methodologies.
+                    </p>
+                    <h6>Frontend Testing - Flutter & Mockito</h6>
+                    <p>
+                        As a skilled Flutter developer, I prioritize testing to ensure the stability of my mobile
+                        applications. My
+                        proficiency extends to writing unit and widget tests using tools like Mockito. This allows me to
+                        simulate
+                        different scenarios and verify the correctness of the application's behavior.
+                    </p>
+                    <p>
+                        I craft thorough test suites that cover various use cases and edge scenarios, guaranteeing a
+                        seamless and
+                        bug-free user experience.
+                    </p>
+                    <h6>Backend Testing - pytest</h6>
+                    <p>
+                        In backend development, I employ pytest to rigorously test server-side components and APIs. With
+                        a strong
+                        understanding of API testing, I ensure that data interactions are accurate and error handling is
+                        robust.
+                    </p>
+                    <p>
+                        My testing methodologies involve writing comprehensive unit and integration tests, effectively
+                        identifying
+                        and addressing potential issues before they impact users.
+                    </p>
+                    <p>
+                        Through consistent testing practices on both frontend and backend, I deliver software solutions
+                        that adhere
+                        to the highest quality standards, providing clients and users with dependable and trustworthy
+                        applications.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- server management -->
+    <div class="modal fade" id="serverModal" tabindex="-1" role="dialog" aria-labelledby="serverModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serverModalTitle">Flutter Expertise</h5>
+
+
+                </div>
+                <div class="modal-body">
+                    <p>
+                        I am a proficient Flutter developer with a strong focus on efficient state management. I have
+                        extensive experience
+                        with tools like BLoC and Riverpod, enabling me to design complex UIs and manage application
+                        state seamlessly.
+                    </p>
+                    <p>
+                        When it comes to API handling, I rely on Dio to create robust and flexible communication between
+                        the app and backend services.
+                        I have also mastered GetIt for dependency injection, ensuring clean and organized code.
+                    </p>
+                    <p>
+                        Testing is a crucial part of my development process, and I leverage tools like Mockito to write
+                        comprehensive unit and widget tests.
+                        My skills go beyond these mentioned areas, allowing me to tackle a wide range of challenges in
+                        Flutter app development.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agile -->
+    <div class="modal fade" id="agileModal" tabindex="-1" role="dialog" aria-labelledby="agileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="agileModalTitle">Expertise in Agile/Scrum Methodologies</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        I am well-versed in Agile/Scrum methodologies, leveraging these frameworks to enhance
+                        collaboration, maximize
+                        efficiency, and deliver successful software projects.
+                    </p>
+                    <h6>Agile Mindset</h6>
+                    <p>
+                        My approach to software development is rooted in Agile principles. I prioritize customer
+                        collaboration,
+                        continuous feedback, and iterative development, ensuring that software solutions are tailored to
+                        meet evolving
+                        requirements and user needs.
+                    </p>
+                    <p>
+                        I embrace change as a natural part of the development process and focus on delivering tangible
+                        value to clients
+                        and users with each iteration.
+                    </p>
+                    <h6>Scrum Mastery</h6>
+                    <p>
+                        Within the Scrum framework, I excel as a Scrum Master or team member, facilitating
+                        cross-functional teams to
+                        achieve their highest potential. I ensure that Scrum events like Sprint Planning, Daily
+                        Standups, and Retrospectives
+                        run smoothly, fostering effective communication and transparency.
+                    </p>
+                    <p>
+                        I am adept at creating and maintaining a well-organized product backlog, prioritizing user
+                        stories, and tracking
+                        progress using Agile tools like Jira or Trello.
+                    </p>
+                    <p>
+                        Through my expertise in Agile/Scrum, I drive projects toward success by enabling collaboration,
+                        adaptive planning,
+                        and delivering valuable increments of software on a consistent basis.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
 <script src="./js/script.js"></script>
