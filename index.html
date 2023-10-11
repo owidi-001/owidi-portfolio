@@ -3,772 +3,439 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owidi</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Kevin Owidi Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- nav -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand">&lt;/&gt; Kevin Owidi</a>
+<body class="bg-gray-100">
+    <div class="bg-white h-screen">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="text-xl font-semibold text-indigo-600">&lt;/&gt; Kevin Owidi</span>
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="#services"
+                        class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Services</a>
+                    <a href="#portfolio"
+                        class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Portfolio</a>
+                    <!-- <a href="#skills"
+                        class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Skills</a>
+                    <a href="#experience"
+                        class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Experience</a> -->
+                    <a href="#contact"
+                        class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">Contact</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Resume <span
+                            aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="lg:hidden" role="dialog" aria-modal="true">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div class="fixed inset-0 z-50"></div>
+                <div
+                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="text-xl font-semibold text-indigo-600">Owidi</span>
 
-            <div class="d-flex">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">about</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">work</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">contact</a>
-                    </li>
-                </ul>
+                        </a>
+                        <button type=" button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="#services"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-indigo-600">Services</a>
+                                <a href="#portfolio"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-indigo-600">Portfolio</a>
+                                <!-- <a href="#skills"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-indigo-600">Skills</a>
+                                <a href="#experience"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-indigo-600">Experience</a> -->
+                                <a href="#contact"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-indigo-600">Contact</a>
+                            </div>
+                            <div class="py-6">
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- hero -->
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="w-1/2 justify-center items-center flex">
+                    <div class="" style="width: 512px; height: 512px; border: 15px solid #eeeeee; overflow: hidden;">
+                        <img src="./imgs/me.png" class="" alt="..." style="width: 100%; height: auto;">
+                    </div>
+                </div>
+
+                <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56  w-1/2">
+                    <div class="hidden sm:mb-8 sm:flex sm:justify-start">
+                        <div class="relative py-1 text-sm leading-6 text-gray-600">
+                            Hello, I'M
+                        </div>
+                    </div>
+                    <div class="text-start">
+                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Kevin Owidi</h1>
+                        <h1 class="pt-5 text-lg font-semibold text-indigo-600 sm:text-4xl">Software Engineer</h1>
+                        <p class="mt-6 text-lg leading-8 text-gray-600 w-4/5">A seasoned software engineer with
+                            sepcialties in mobile and backend development.
+                        </p>
+                        <div class="mt-10 flex items-center justify-start gap-x-6">
+
+                            <a class="py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:text-indigo-600"
+                                href="https://www.linkedin.com/in/kevin-owidi-08b275149/"><i class="bi bi-linkedin"></i>
+                                LinkedIn</a>
+
+                            <a class="py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:text-indigo-600"
+                                href="https://github.com/owidi-001"><i class="bi bi-github"></i> Github</a>
+                        </div>
+                        <div class="mt-10 flex items-center justify-start gap-x-6">
+                            <a href="#"
+                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Resume</a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <!-- hero -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="title">
-                        Get in touch for quick, responsive and scalable mobile and web apps.
-                    </h2>
-                    <br>
-                    <p>
-                        I am an experienced Android and web developer with over 3+ years of experience in software
-                        engineering. I have built quaite a number of applications for both Android and web platforms, as
-                        well as
-                        designed and developed websites.
-                    </p>
-                    <p>
-                        My expertise lies in Python/Django, Dart/Flutter, HTML, CSS,
-                        JavaScript, and SQL. Additionally, I have experience with version-control systems, such as Git
-                        and Bit Bucket. I am passionate about staying up to date with the latest technologies and trends
-                        in order to create the most reliable and efficient products.
-                    </p>
 
-                    <a href="#contact" class="btn btn-large btn-primary">Contact</a>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <img src="./imgs/me.png" class="img-circle rounded img-fluid" alt="...">
+    <!-- Services Offered -->
+    <section id="services" class="bg-cover bg-center h-screen" style="background-image: url('./imgs/hero.jpg');">
+        <div class="mx-auto h-screen w-screen" style="background-color: #eeeeeee5;">
+            <div class="py-24 sm:py-32">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-2xl sm:text-center">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Services I Offer</h2>
+                        <p class="mt-6 text-lg leading-8 text-gray-600">Select what best suites your bussiness and get
+                            it accelearated as fast as possible.</p>
                     </div>
-                </div>
-            </div>
+                    <div class="flex mx-auto mt-16 rounded-3xl">
+                        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                            <div
+                                class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                                <div class="mx-auto max-w-xs px-8">
+                                    <p class="text-base font-semibold text-gray-600">Interface Design</p>
+                                    <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                                        <span class="text-5xl font-bold tracking-tight text-gray-900">UI/UX</span>
 
-            <!-- socials -->
-            <ul class="nav justify-content-start position-absolute bottom-0 start-50 translate-middle-x">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://twitter.com/kevinowidi_"><i
-                            class="bi bi-twitter"></i> Twitter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/kevin-owidi-08b275149/"><i
-                            class="bi bi-linkedin"></i> LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/owidi-001"><i class="bi bi-github"></i> Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://wa.me/0791381653"><i class="bi bi-whatsapp"></i> Whatsapp</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- about -->
-    <section id="about">
-
-        <div class="container">
-            <h2 class="title text-center">
-                About me
-            </h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <code>
-                        <div>
-                            <p>
-                                Currently, I am working as a Mobile and Integrations Engineer at
-                                <a href="https://deveint.com/en/">Deveint LTD</a>, where I have gained one year of valuable experience.
-                            </p>
-                            <p>
-                                In addition to my role at Deveint, I am deeply involved in various projects. One noteworthy project is
-                                <a href="https://nuruexpress.co.ke/">Nuru Express</a>, where I am proud to be a co-founder. Our mission is to provide
-                                convenient and reliable delivery solutions for SMEs in Kenya.
-                            </p>
-                            <p>
-                                My curiosity extends to the exploration of the Elixir programming language and its potential. If you're interested
-                                in learning more about it, feel free to reach out! 😊
-                            </p>
-                            <p>
-                                Beyond my professional interests, I am an enthusiastic leader and dedicated community builder.
-                            </p>
-                        </div>
-                    </code>
-                </div>
-                <div class="col-md-8">
-                    <h4 class="title">
-                        <b>Skill ranking</b>
-                    </h4>
-                    <div class="row d-flex align-items-center justify-content-start">
-                        <div class="col-md-3">
-                            <h6>Frontend & mobile</h6>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </p>
+                                    <a href="#"
+                                        class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+                                        Quote</a>
+                                    <p class="mt-6 text-xs leading-5 text-gray-600">It involnves the design of the user
+                                        interface (UI) and user experience (UX) for the application features.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-1">
-                            <a class="nav-link" data-toggle="modal" data-target="#frontendModal" role="button"
-                                aria-expanded="false" aria-controls="collapseExample"><i
-                                    class="bi bi-arrow-right-circle-fill"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="row d-flex align-items-center justify-content-start">
-                        <div class="col-md-3">
-                            <h6>Backend & Databases</h6>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                    aria-valuemin="0" aria-valuemax="100">70%</div>
+                        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                            <div
+                                class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                                <div class="mx-auto max-w-xs px-8">
+                                    <p class="text-base font-semibold text-gray-600">Mobile Development</p>
+                                    <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                                        <span class="text-5xl font-bold tracking-tight text-gray-900">Mobile</span>
+                                    </p>
+                                    <a href="#"
+                                        class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+                                        Quote</a>
+                                    <p class="mt-6 text-xs leading-5 text-gray-600">It involves the development of
+                                        cross-platform mobile applications ie, on ios and android on the same code base.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-1">
-                            <a class="nav-link" data-toggle="modal" data-target="#backendModal" role="button"
-                                aria-expanded="false" aria-controls="collapseExample"><i
-                                    class="bi bi-arrow-right-circle-fill"></i></a>
-                        </div>
-                    </div>
+                        <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                            <div
+                                class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                                <div class="mx-auto max-w-xs px-8">
+                                    <p class="text-base font-semibold text-gray-600">Web Development</p>
+                                    <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                                        <span class="text-5xl font-bold tracking-tight text-gray-900">Web</span>
 
-                    <div class="row">
-                        <div class="col-md-3">
-
-                            <h6>Version Control & Deveops</h6>
-                        </div>
-                        <div class="col-md-8">
-
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100">80%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <a class="nav-link" data-toggle="modal" data-target="#versionModal" role="button"
-                                aria-expanded="false" aria-controls="collapseExample"><i
-                                    class="bi bi-arrow-right-circle-fill"></i></a>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-md-3">
-
-                            <h6>Testing</h6>
-                        </div>
-                        <div class="col-md-8">
-
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65"
-                                    aria-valuemin="0" aria-valuemax="100">65%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <a class="nav-link" data-toggle="modal" data-target="#testingModal" role="button"
-                                aria-expanded="false" aria-controls="collapseExample"><i
-                                    class="bi bi-arrow-right-circle-fill"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- <div class="row">
-                        <div class="col-md-3">
-
-                            <h6>Server Management</h6>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100">60%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <a class="nav-link" data-toggle="modal" data-target="#serverModal" role="button"
-                                aria-expanded="false" aria-controls="collapseExample"><i
-                                    class="bi bi-arrow-right-circle-fill"></i></a>
-                        </div>
-                    </div> -->
-                    <div class="row">
-                        <div class="col-md-3">
-
-                            <h6>Agile/Scrum</h6>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100">90%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <a class="nav-link" data-toggle="modal" data-target="#agileModal" role="button"
-                                aria-expanded="false" aria-controls="collapseExample"><i
-                                    class="bi bi-arrow-right-circle-fill"></i></a>
-                        </div>
-                    </div>
-                    <p>
-                        The work I provide is high quality, fully responsive and tested in wide range of devices.
-                    </p>
-                </div>
-            </div>
-            <div class="nav">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a href="./doc/resume.pdf" class="btn"> <i class="bi bi-cloud-download"></i> Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- Roles -->
-    <section id="roles">
-        <div class="container">
-            <h2 class="title text-center">Roles</h2>
-            <p class="text-center">
-                As a dev, these are the main activities I do as per the given stack.
-            </p>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Django Dev</h4>
-                    <ol>
-                        <li>Design database models and manage database migrations</li>
-                        <li>Create APIs and web services</li>
-                        <li>Document the APIs using coreapi/swagger docs/devdocs</li>
-                        <li>
-                            Implement user authentication and authorization
-                        </li>
-                        <li>Performance optimization,Debugging and troubleshooting</li>
-                    </ol>
-                </div>
-                <div class="col-md-12">
-                    <h4>
-                        Flutter dev
-                    </h4>
-                    <ol>
-                        <li>Create user interface (UI) designs based on existing mockups.</li>
-                        <li>Implement widgets, layouts, and navigation using the Flutter SDK.</li>
-                        <li>Develop, debug, and optimize user interface (UI) code.</li>
-                        <li>Integrate third-party APIs and SDKs into the app.</li>
-                        <li>Incorporate data storage solutions such as Firebase or SQLite.</li>
-                        <li>Write unit and widget tests to ensure quality product.</li>
-                        <li>Troubleshoot and debug issues in the code.</li>
-                        <!-- <li>Develop custom plugins to extend the app’s functionality.</li> -->
-                        <li>Create custom themes and designs for the app.</li>
-                        <li>Collaborate with product owners, designers, and other developers.</li>
-                    </ol>
-                </div>
-                <div class="col-md-12">
-                    <h4>Database Developer</h4>
-                    <p>
-                        Database Developer: The Database Developer is responsible for designing and creating the
-                        database, as well as maintaining and updating it.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- portfolio -->
-    <!-- <section id="portfolio">
-        <div class="container">
-            <h2 class="title text-center">
-                Recent Works
-            </h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="thumb">
-                            <img src="./res/meal-io/Meal-io.png" alt="Product Image">
-                        </div>
-                        <div class="container details">
-                            <div class="row">
-                                <span class="category">Mobile App</span>
-                            </div>
-                            <h4 class="label">Meal-io App</h4>
-                            <p class="description">
-                                This is a food delivery mobile application built for the customer user. It enables the
-                                user to authenticate, browse, filter, search, add to cart, checkout and make payment
-                                using the app.
-                                The application also picks user location using google maps and also enables the user to
-                                set custome delivery location.
-                                It is equiped with responsive and cross platform build as it has been developed using
-                                flutter mobile framework.
-                            </p>
-                            <div class="bottom-details d-flex justify-content-end p-2">
-                                <div class="links">
-                                    <a href="https://github.com/owidi-001/green_veges"
-                                        class="btn btn-small btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                    </p>
+                                    <a href="#"
+                                        class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get
+                                        Quote</a>
+                                    <p class="mt-6 text-xs leading-5 text-gray-600">It involves the development of the
+                                        backend [business] and frontend [client] interfaces of the web application with
+                                        seamingless intergrations.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="thumb">
-                            <img src="./res/m-rider/m-rider.png" alt="Product Image">
-                        </div>
-                        <div class="container details">
-                            <div class="row">
-                                <span class="category">Mobile Appp</span>
-                            </div>
-                            <h4 class="label">M-Rider App</h4>
-                            <p class="description">
-                                This is a Rider mobile application built for the rider user. It enables the user to
-                                authenticate, browse pending deliveries, filter, and confirm delivery to update status,
-                                using the app.
-                                In future updates, The application is intended to include google maps realtime tracking
-                                of the rider current and the destination location.
-                            </p>
-                            <div class="bottom-details d-flex justify-content-end p-2">
-                                <div class="links">
-                                    <a href="https://github.com/owidi-001/meal-io-rider"
-                                        class="btn btn-small btn-primary"><i class="bi bi-eye-fill"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="thumb">
-                            <img src="./res/vendor-dashboard/Meal-io dashboard.png" alt="Product Image">
-                        </div>
-                        <div class="container details">
-                            <div class="row">
-                                <span class="category">Web App</span>
-                            </div>
-                            <h4 class="label">Mealio Dashboard</h4>
-                            <p class="description">
-                                This is a compilation of vendors dashboard, developers API documentation test area and
-                                admin/super user dashboard.
-                                It is a web application built by django and django rest framework and jinja2 templating
-                                engine.
-                            </p>
-                            <div class="bottom-details d-flex justify-content-end p-2">
-                                <div class="links">
-                                    <a href="https://github.com/owidi-001/meal-io" class="btn btn-small btn-primary"><i
-                                            class="bi bi-eye-fill"></i></a>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+
         </div>
-    </section> -->
+    </section>
 
-    <!-- contact -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="title text-center">
-                Contact
-            </h2>
-            <div class="form-container">
-                <form method="post" id="contactForm">
-                    <legend>
-                        Contact Form
-                    </legend>
 
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone_number" id="phone_number" placeholder="0700000000" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="msg-type">Message type</label>
-                        <select name="msg-type" id="msg-type">
-                            <option value="Job" selected="selected">
-                                Job Offer
-                            </option>
-                            <option value="project" selected="selected">
-                                Project
-                            </option>
-                            <option value="complaint" selected="selected">
-                                Complaint
-                            </option>
-                            <option value="other" selected="selected">
-                                -- Other --
-                            </option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Message</label>
-                        <textarea type="text" name="tagline" id="tagline" placeholder="Your message, concern etc"
-                            rows="4"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <!-- spacer -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class=" px-6">
+        <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+            <div class="mx-auto max-w-2xl lg:mx-0 py-5">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Portfolio</h2>
+                <p class="mt-2 text-lg leading-8 text-gray-600">A tip of the ice berg on what has been cooking.</p>
+            </div>
+            <div class="-m-1 flex flex-wrap md:-m-2">
+                <div class="flex w-1/2 flex-wrap">
+                    <div class="w-1/2 p-1 md:p-2 relative group">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./imgs/portfolio/apps/dexter/1.jpg" />
+                        <div
+                            class="absolute bg-indigo-600 mr-2 bottom-0  h-full rounded-lg object-cover object-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-full">
+                            <article class="flex max-w-xl flex-col items-center justify-center p-5">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0 capitalize"></span>
+                                            Dexter POS App
+                                        </a>
+                                    </h3>
+                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">The Textile POS (Point of
+                                        Sale) App is a sophisticated software application tailored for businesses in the
+                                        textile industry. This portfolio piece showcases my skills in mobile app
+                                        development and highlights my ability to create solutions that enhance the
+                                        efficiency and productivity of businesses..</p>
+                                    <a href="#"
+                                        class="mt-10 block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Request
+                                        Demo</a>
+                                    <a href="
+                                    http://osumbadexter.pythonanywhere.com/"
+                                        class="mt-10 block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">User
+                                        manual</a>
+
+                                </div>
+                            </article>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <input type="submit" name="submit" value="Submit" onclick="submitAction()">
+                    <div class="w-1/2 p-1 md:p-2 relative group">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./imgs/portfolio/apps/nuru/1.jpg" />
+                        <div
+                            class="absolute bg-indigo-600 mr-2 bottom-0  h-full rounded-lg object-cover object-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-full">
+                            <article class="flex max-w-xl flex-col items-center justify-center p-5">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0 capitalize"></span>
+                                            Nuru Delivery App
+                                        </a>
+                                    </h3>
+                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">The Parcel Delivery App
+                                        addresses the fundamental challenge of streamlining and enhancing the parcel
+                                        delivery process. By providing a user-friendly platform that enables individuals
+                                        and businesses to effortlessly book, track, and manage parcel deliveries, it
+                                        simplifies logistics for senders, recipients, and delivery drivers. The app
+                                        offers real-time tracking, secure payment options, and user reviews, fostering
+                                        trust and transparency within the delivery ecosystem. With this application, it
+                                        solves the age-old problem of ensuring efficient, secure, and reliable parcel
+                                        delivery, transforming it into a hassle-free and convenient experience for all
+                                        stakeholders.</p>
+                                    <a href="#"
+                                        class="mt-10 block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Request
+                                        Demo</a>
+
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                </form>
+                    <div class="w-full p-1 md:p-2 relative group">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./imgs/portfolio/webs/dexter/1.png" />
+                        <div
+                            class="absolute bg-indigo-600 mr-2 w-full bottom-0  h-full rounded-lg object-cover object-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-full">
+                            <article class="flex max-w-xl flex-col items-center justify-center p-5">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0 capitalize"></span>
+                                            Dexter Server documentation
+                                        </a>
+                                    </h3>
+                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">A reliable backend api
+                                        server definater has to be documented for future reference, cross funtainal
+                                        teams operations and easy maintainability and what gives that better solution
+                                        that django coreapi schema documentation. The tool is as powerful as other
+                                        documentation tools such as redocs and swagger docs, with quite an intuative
+                                        user interface.</p>
+                                    <a href="
+                                    http://osumbadexter.pythonanywhere.com/api/v1/"
+                                        class="mt-10 block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Check
+                                        it out</a>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-1/2 flex-wrap">
+                    <div class="w-full p-1 md:p-2 relative group">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./imgs/portfolio/webs/swiftCart/1.png" />
+                        <div
+                            class="absolute bg-indigo-600 mr-2 w-full bottom-0  h-full rounded-lg object-cover object-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-full">
+                            <article class="flex max-w-xl flex-col items-center justify-center p-5">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0 capitalize"></span>
+                                            Swift cart
+                                        </a>
+                                    </h3>
+                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">This is shopping platform
+                                        exploring the broad and complicated architecture and designs that go into
+                                        e-commerce planning and development. The platform's frontend in built with react
+                                        frameword while the backend is served using django and graphQl. <b>N/B:</b>
+                                        <i>This is Currently under development and is not production ready.</i>
+                                    </p>
+                                    <a href="
+                                    http://osumbadexter.pythonanywhere.com/api/v1/"
+                                        class="mt-10 block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Join
+                                        the demo waitlist</a>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2 relative group">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./imgs/portfolio/apps/fedha/1.jpg" />
+                        <div
+                            class="absolute bg-indigo-600 mr-2 w-full bottom-0  h-full rounded-lg object-cover object-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-full">
+                            <article class="flex max-w-xl flex-col items-center justify-center p-5">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0 capitalize"></span>
+                                            Fedha Track
+                                        </a>
+                                    </h3>
+                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">As the globe is hit by
+                                        tough economic times and constantly rising cost of living, what's better than to
+                                        have a helper to keep you on track with your incomes, expenses, budgets,
+                                        subscriptions etc for healthier financial living.</p>
+                                    <a href="
+                                    http://osumbadexter.pythonanywhere.com/api/v1/"
+                                        class="mt-10 block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Join
+                                        the demo waitlist</a>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="w-1/2 p-1 md:p-2 relative group">
+                        <img alt="gallery" class="block h-full w-full rounded-lg object-cover object-center"
+                            src="./imgs/portfolio/apps/calc/1.jpg" />
+                        <div
+                            class="absolute bg-indigo-600 mr-2 w-full bottom-0  h-full rounded-lg object-cover object-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out transform group-hover:-translate-y-full">
+                            <article class="flex max-w-xl flex-col items-center justify-center p-5">
+                                <div class="group relative">
+                                    <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                                        <a href="#">
+                                            <span class="absolute inset-0 capitalize"></span>
+                                            X calc
+                                        </a>
+                                    </h3>
+                                    <p class="mt-5 line-clamp-3 text-sm leading-6 text-white">Just another weekend
+                                        project to pass time and of course have fun. This calculator besides performing
+                                        it's basic functions, help fetch current work currency rates and helps one
+                                        convert from one currency to another with the base of US dollar against 2 other
+                                        of their choosing. It also helps converst different measurements against their
+                                        base/SI unit.</p>
+                                    <a href="
+                                    http://osumbadexter.pythonanywhere.com/api/v1/"
+                                        class="mt-10 block w-full rounded-md bg-white px-3 py-2 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Request
+                                        Demo</a>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- footer -->
-    <footer>
 
+    <!--Footer container-->
+    <footer class="flex flex-col bg-white items-center text-center text-white pt-12 mt-12">
+        <div class="w-full px-6 pt-6">
+            <div class="mb-6 flex justify-center">
+                <a href="https://www.linkedin.com/in/kevin-owidi-08b275149/" type="button"
+                    class="m-1 h-9 w-9 rounded-full border-2 border-indigo-600 uppercase leading-normal text-indigo-600 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/owidi-001/" type="button"
+                    class="m-1 h-9 w-9 rounded-full border-2 border-indigo-600 uppercase leading-normal text-indigo-600 transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+                    data-te-ripple-init data-te-ripple-color="light">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!--Copyright section-->
+        <div class="w-full p-4 text-center bg-indigo-600">
+            &copy;
+            <a class="text-whitehite" href="https://tailwind-elements.com/">Kevin Owidi</a>
+        </div>
     </footer>
-
-    <!-- Modals -->
-    <!-- flutter -->
-    <div class="modal fade" id="frontendModal" tabindex="-1" role="dialog" aria-labelledby="frontendModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="frontendModalTitle">Expertise in Mobile and Web Development</h5>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        I excel in both mobile and web development, specializing in both Flutter for mobile and React
-                        for web.
-                    </p>
-                    <h6>Mobile Expertise - Flutter</h6>
-                    <p>
-                        As a skilled Flutter developer, I have a keen focus on crafting highly performant and visually
-                        appealing
-                        mobile applications. I possess extensive experience in efficient state management, leveraging
-                        tools
-                        like BLoC and Riverpod. This expertise enables me to design complex user interfaces and
-                        seamlessly
-                        manage application state.
-                    </p>
-                    <p>
-                        In terms of API integration, I utilize Dio to establish robust and flexible communication
-                        between the
-                        app and backend services. My mastery of GetIt for dependency injection ensures that my code
-                        remains
-                        organized and maintainable.
-                    </p>
-                    <p>
-                        Rigorous testing is a cornerstone of my development approach. I employ tools like Mockito to
-                        craft
-                        comprehensive unit and widget tests, ensuring the reliability and stability of my Flutter
-                        applications.
-                        My proficiency extends beyond these areas, allowing me to overcome diverse challenges in Flutter
-                        app
-                        development.
-                    </p>
-                    <h6>Web Expertise - React</h6>
-                    <p>
-                        On the web front, I am adept at leveraging the power of React to build dynamic and interactive
-                        user
-                        interfaces. I have a deep understanding of component-based architecture, allowing me to create
-                        reusable and modular web components.
-                    </p>
-                    <p>
-                        I'm well-versed in handling asynchronous operations using React's ecosystem and have experience
-                        integrating APIs and managing state using libraries like Redux or Context API.
-                    </p>
-                    <p>
-                        My commitment to clean code, effective problem-solving, and continuous learning empowers me to
-                        deliver
-                        high-quality solutions for both mobile and web platforms.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Backend -->
-    <div class="modal fade" id="backendModal" tabindex="-1" role="dialog" aria-labelledby="backendModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="backendModalTitle">Expertise in Backend Development and Databases</h5>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        I specialize in backend development and databases, with a strong command of technologies like
-                        Django,
-                        FastAPI, and Flask, ensuring robust and efficient server-side solutions.
-                    </p>
-                    <h6>Backend Expertise</h6>
-                    <p>
-                        My proficiency in backend frameworks such as Django, FastAPI, and Flask empowers me to architect
-                        and
-                        develop intricate web applications with sophisticated functionalities. I craft APIs that
-                        facilitate seamless
-                        communication between frontend and backend components, allowing for dynamic user experiences.
-                    </p>
-                    <p>
-                        Using FastAPI, I leverage asynchronous programming to enhance backend performance and
-                        responsiveness,
-                        providing users with swift and efficient data processing.
-                    </p>
-                    <h6>Database Proficiency</h6>
-                    <p>
-                        In the realm of databases, I am adept at designing and optimizing database schemas for optimal
-                        data storage
-                        and retrieval. I have experience with relational databases like PostgreSQL and MySQL, as well as
-                        NoSQL
-                        databases like MongoDB, tailoring solutions to specific project requirements.
-                    </p>
-                    <p>
-                        My expertise extends to efficient data modeling, indexing, and query optimization, ensuring that
-                        applications
-                        are backed by powerful and scalable data storage solutions.
-                    </p>
-                    <p>
-                        My commitment to clean and maintainable code, coupled with my problem-solving skills, empowers
-                        me to deliver
-                        backend solutions that align with industry best practices and exceed client expectations.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- version control -->
-    <div class="modal fade" id="versionModal" tabindex="-1" role="dialog" aria-labelledby="versionModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="versionModalTitle">version in Version Control and DevOps</h5>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        My expertise extends to Version Control and DevOps practices, ensuring streamlined collaboration
-                        and efficient
-                        deployment workflows for software projects.
-                    </p>
-                    <h6>Version Control Mastery</h6>
-                    <p>
-                        I possess a deep understanding of version control systems like Git, enabling me to manage
-                        codebase versions
-                        effectively. I excel at branching, merging, and resolving conflicts, ensuring seamless
-                        collaboration among
-                        development teams.
-                    </p>
-                    <p>
-                        Leveraging version control, I maintain a well-organized and documented history of code changes,
-                        enabling easy
-                        tracking of progress and efficient code reviews.
-                    </p>
-                    <h6>DevOps Excellence</h6>
-                    <p>
-                        In the realm of DevOps, I orchestrate efficient deployment pipelines using tools like Jenkins,
-                        Travis CI, or
-                        GitHub Actions. I implement Continuous Integration (CI) and Continuous Deployment (CD) practices
-                        to ensure
-                        rapid and reliable software delivery.
-                    </p>
-                    <p>
-                        I automate deployment, testing, and monitoring processes, enabling teams to focus on development
-                        rather than
-                        repetitive tasks. My expertise extends to cloud platforms like AWS, Azure, or Google Cloud,
-                        where I configure
-                        infrastructure for optimal scalability and performance.
-                    </p>
-                    <p>
-                        My commitment to version control best practices and DevOps methodologies empowers me to deliver
-                        software
-                        solutions that are well-managed, easily maintainable, and efficiently deployed.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Testing -->
-    <div class="modal fade" id="testingModal" tabindex="-1" role="dialog" aria-labelledby="testingModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="testingModalTitle">Expertise in Testing for Frontend and Backend</h5>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        My expertise spans both frontend and backend testing, with a focus on delivering reliable and
-                        robust software
-                        solutions through comprehensive testing methodologies.
-                    </p>
-                    <h6>Frontend Testing - Flutter & Mockito</h6>
-                    <p>
-                        As a skilled Flutter developer, I prioritize testing to ensure the stability of my mobile
-                        applications. My
-                        proficiency extends to writing unit and widget tests using tools like Mockito. This allows me to
-                        simulate
-                        different scenarios and verify the correctness of the application's behavior.
-                    </p>
-                    <p>
-                        I craft thorough test suites that cover various use cases and edge scenarios, guaranteeing a
-                        seamless and
-                        bug-free user experience.
-                    </p>
-                    <h6>Backend Testing - pytest</h6>
-                    <p>
-                        In backend development, I employ pytest to rigorously test server-side components and APIs. With
-                        a strong
-                        understanding of API testing, I ensure that data interactions are accurate and error handling is
-                        robust.
-                    </p>
-                    <p>
-                        My testing methodologies involve writing comprehensive unit and integration tests, effectively
-                        identifying
-                        and addressing potential issues before they impact users.
-                    </p>
-                    <p>
-                        Through consistent testing practices on both frontend and backend, I deliver software solutions
-                        that adhere
-                        to the highest quality standards, providing clients and users with dependable and trustworthy
-                        applications.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- server management -->
-    <div class="modal fade" id="serverModal" tabindex="-1" role="dialog" aria-labelledby="serverModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="serverModalTitle">Flutter Expertise</h5>
-
-
-                </div>
-                <div class="modal-body">
-                    <p>
-                        I am a proficient Flutter developer with a strong focus on efficient state management. I have
-                        extensive experience
-                        with tools like BLoC and Riverpod, enabling me to design complex UIs and manage application
-                        state seamlessly.
-                    </p>
-                    <p>
-                        When it comes to API handling, I rely on Dio to create robust and flexible communication between
-                        the app and backend services.
-                        I have also mastered GetIt for dependency injection, ensuring clean and organized code.
-                    </p>
-                    <p>
-                        Testing is a crucial part of my development process, and I leverage tools like Mockito to write
-                        comprehensive unit and widget tests.
-                        My skills go beyond these mentioned areas, allowing me to tackle a wide range of challenges in
-                        Flutter app development.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Agile -->
-    <div class="modal fade" id="agileModal" tabindex="-1" role="dialog" aria-labelledby="agileModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="agileModalTitle">Expertise in Agile/Scrum Methodologies</h5>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        I am well-versed in Agile/Scrum methodologies, leveraging these frameworks to enhance
-                        collaboration, maximize
-                        efficiency, and deliver successful software projects.
-                    </p>
-                    <h6>Agile Mindset</h6>
-                    <p>
-                        My approach to software development is rooted in Agile principles. I prioritize customer
-                        collaboration,
-                        continuous feedback, and iterative development, ensuring that software solutions are tailored to
-                        meet evolving
-                        requirements and user needs.
-                    </p>
-                    <p>
-                        I embrace change as a natural part of the development process and focus on delivering tangible
-                        value to clients
-                        and users with each iteration.
-                    </p>
-                    <h6>Scrum Mastery</h6>
-                    <p>
-                        Within the Scrum framework, I excel as a Scrum Master or team member, facilitating
-                        cross-functional teams to
-                        achieve their highest potential. I ensure that Scrum events like Sprint Planning, Daily
-                        Standups, and Retrospectives
-                        run smoothly, fostering effective communication and transparency.
-                    </p>
-                    <p>
-                        I am adept at creating and maintaining a well-organized product backlog, prioritizing user
-                        stories, and tracking
-                        progress using Agile tools like Jira or Trello.
-                    </p>
-                    <p>
-                        Through my expertise in Agile/Scrum, I drive projects toward success by enabling collaboration,
-                        adaptive planning,
-                        and delivering valuable increments of software on a consistent basis.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-<script src="./js/script.js"></script>
 
 </html>
